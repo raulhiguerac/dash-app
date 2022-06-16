@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.container1 { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+} 
+
+.Derecha {
+    text-align: center;
+    padding: 5% 5% 2.5% 5%;
+}
+
+.Derecha img{
+    margin-right: 50px;
+}
+
+.Izquierda {
+    /* text-align: center; */
+    margin: 12.5% auto auto 5%;
+    padding: 5%;
+}
+
+.Izquierda h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.Izquierda p{
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
+}
+
+.Imagen_pequeña{
+    display: none;
+}
+ 
+.Izquierda a{
+    text-decoration: none;
+    padding: 18px 80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #fff;
+    background-color: #FF8906;
+    border-radius: 50px;
+    box-shadow: 1px 1px 30px -12px orange;
+}
+
+.Izquierda a:hover {
+    box-shadow: 1px 1px 30px -3px black;
+}
+
+.contenedor2 {
+    box-sizing: border-box;
+    padding: 2.5% 5%;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto 5%;
+}
+
+.sub-titulo {
+    margin: auto 5%;
+    font-size: 20px;
+}
+
+.secundario {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.card {
+    min-height: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}
+  
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+  
+.card article {
+    padding: 20px;
+    display: flex;
+    
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.card .thumb {
+    padding-bottom: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+  
+.card p { 
+    flex: 1; /* make p grow to fill available space*/
+    line-height: 1.4;
+}
+  
+.card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+#img_dashboard {
+    background-image: url(dashboard.png);
+}
+
+#img_score {
+    background-image: url(scoremodel.png);
+}
+
+#img_como {
+    background-image: url(Como.png);
+}
+
+#img_equipo {
+    background-image: url(Equipo.png);
+}
+
+#img_fundacion {
+    background-image: url(Fundacion.png);
+}
+
+
+@media only screen and (max-width: 1300px){ 
+
+    .Imagen_grande{
+      display: none;
+    }
+ 
+    .Imagen_pequeña{
+      display: block;
+    }
+
+    .container1{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .secundario {
+      grid-template-columns: 1fr 1fr;
+    }  
+    .dashboard {
+    grid-column: 1/ span 2;
+    }
+    /* .item-1 h1 {
+      font-size: 30px;
+    } */
+}
+  
+@media only screen and (min-width: 850px) {
+    .secundario {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
