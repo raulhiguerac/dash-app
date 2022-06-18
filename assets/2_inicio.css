@@ -65,6 +65,10 @@ section{
     box-shadow: 1px 1px 30px -3px black;
 }
 
+.amanecer {
+    color: #FFD200;
+}
+
 .contenedor2 {
     box-sizing: border-box;
     padding: 2.5% 5%;

@@ -13,7 +13,7 @@ layout = html.Div([
 
                 html.Div(
                     
-                    html.H1('NOMBRE DEL APLICATIVO'),
+                    html.H1(children=['SOMOS ',html.Span(className="amanecer",children=['AMANECER'])]),
                 
                 ),
 
@@ -143,6 +143,7 @@ layout = html.Div([
 
     ]),
 
+    html.Script(src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"),
 ])
 
 
